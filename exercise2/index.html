@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 2</title>
+</head>
+<body>
+    <form id="formulario1" action="recibe.html" method="post">
+        <h2>Nuestro Formulario</h2>
+
+        <fieldset>
+            <legend>Aqui son tus datos de contacto</legend>
+
+            <div>
+                <input required type="text" value="Pepe" placeholder="Aqui tu nombre" pattern="[A-Za-z0-9]+" >
+                <p></p>
+                <input required type="text" name="apellido" id="apellido" placeholder="Aqui tu apellido" pattern="[A-Za-z0-9]+" value="Perez">
+                <p></p>
+                <input required type="email" name="mail" id="mail" placeholder="Aqui tu correo" value="example@correo.com">
+                <p></p>
+                <input required type="tel" name="tel" id="tel1" value="0424-8585859" placeholder="Aqui tu telefono" >
+                <p></p>
+                <input required type="text" name="dir" id="dir" placeholder="Aqui tu direccion" value="Calle Maradona">
+
+            </div>
+            <p></p>
+            <div>
+                <input type="submit" value="Aqui tu nombre">
+            </div>
+
+
+        </fieldset>
+
+    </form>
+
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Nombre</th>
+                <th>Apellido</th>
+                <th>Edad</th>
+                <th>Pais</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td colspan="2">Juan Perez</td>
+                <td>26</td>
+                <td>Colombia</td>
+            </tr>
+            <tr>
+                <td>Jesus</td>
+                <td>Ramirez</td>
+                <td rowspan="2">22</td>
+                <td>Francia</td>
+            </tr>
+            <tr>
+                <td>Jose</td>
+                <td>Armando</td>
+                <td>Brasil</td>
+            </tr>
+        </tbody>
+    </table>
+    <style>
+        #formulario1{
+            border: 1px #000 solid;
+            margin: 30px;
+            padding: 30px;
+            background-color: #f2f2f2;
+        }
+    </style>
+</body>
+</html>
